@@ -1,3 +1,8 @@
 #Cuenta regresiva con while Pide un número n y muestra de n a 0 con while.
 
-x = float(input("Ingresa el números a promediar: "))
+n = int(input("Ingresa un número:  ")) 
+
+while n >= 0:
+    print(n)
+    n = n - 1
+    
