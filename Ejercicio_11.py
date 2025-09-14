@@ -8,9 +8,9 @@ total = 0.0
 
 
 while True:
-    print("\n  Menú básico:")
+    print("  Menú básico:")
     print("1) Sumar al total")
-    print("2) Ver total")
+    print("2) total actual")
     print("0) Salir")
 
     opcion = input("Elija una opción: ")
