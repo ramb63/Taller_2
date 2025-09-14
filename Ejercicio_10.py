@@ -2,14 +2,14 @@
 # Activa una bandera si aparece algún nombre que empiece por “A” (sin importar mayúsculas). 
 # Al final di si se encontró o no.
 
-encontrado = False
+Bandera = False
 while True:
-    palabra = input("Escriba una palabra o espacio para salir: ")
-    if palabra == " ":
+    nombre = input("Escriba una palabra o (espacio para salir): ".upper())
+    if nombre == " ":
         break
-    if palabra == "A" or palabra == "a":
-        encontrado = True
-if encontrado:
-    print("aparecio {a} or {A} al menos una vez")
+    if nombre.upper().startswith("A"):
+        Bandera = True
+if Bandera:
+    print("aparecio nombre con Letra A")
 else:
-    print("nunca se escribio la palabra {a} or {A} ")   
+    print("nunca aparecio nombre con Letra A")   
